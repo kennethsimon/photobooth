@@ -7,6 +7,7 @@ import Signin from './components/auth/Signin'
 import Signup from './components/auth/Signup'
 import Submitphoto from './components/posts/Submitphoto'
 import Explore from './components/Explore/Explore'
+import 'animate.css/animate.min.css'
 
 class App extends Component {
   render() {

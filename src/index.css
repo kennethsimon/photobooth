@@ -73,6 +73,30 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.details-image{
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.image-size{
+    max-height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.image-size .details-image-posted{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.details-container{
+    position: relative;
+    margin-top: 50px;
+}
 
 
 

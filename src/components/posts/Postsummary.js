@@ -6,7 +6,7 @@ import moment from 'moment'
 const Postsummary = ({post}) => {
     return (
       
-        <div className="photo-card">
+        <div className="photo-card animated fadeIn delay-2s">
     <div className="ui fluid card">
   <div className="content">
     <div className="right floated meta">{moment(post.createdAt.toDate()).fromNow()}</div>

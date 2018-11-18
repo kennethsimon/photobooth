@@ -9,7 +9,8 @@ const Postdetails = (props) => {
   const {posted} = props;
   if(posted){
     return (
-      <div className='ui container'>
+    <div className="details-container">
+    <div className='ui container'>
         <div className='detail-header'>
         <div>
      <img className="ui avatar image" src={posted.userphoto} alt='det'/>
@@ -30,11 +31,13 @@ const Postdetails = (props) => {
      </div>
         </div>
      
-      <div className="ui three column centered grid">
-  <div className="column">
+        <div className="details-image">
     <div className="ui fluid card">
-      <div className="image">
-        <img className='ui image fluid' src={posted.photoUrl} alt='detail'/>
+      
+      <div className="image-size">
+      <div className="image borderless">
+        <img className='details-image-posted' src={posted.photoUrl} alt='detail'/>
+      </div>
       </div>
       <div className="content">
         <div className="header">
@@ -42,23 +45,16 @@ const Postdetails = (props) => {
         </div>
       <div className="description">
        {posted.description}
-      </div>
-      </div>
+     </div>
     </div>
   </div>
   </div>
       </div>
+    </div>
     )
   }else{
     return (
-      <div className="container">
-      <div className="ui active progress">
-      <div className="bar">
-      <div className="progress"></div>
-      </div>
-      <div className="label">Uploading Files</div>
-      </div>
-      </div>
+      <div class="ui active centered inline loader"></div>
       )
   }
     
