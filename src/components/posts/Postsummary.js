@@ -37,7 +37,7 @@ const Postsummary = ({post}) => {
   <div className="ui comments">
   <div className="comment">
     <div className="content">
-      <a className="author">Joe Henderson</a>
+      <p className="author">Joe Henderson</p>
       <div className="metadata">
         <div className="date">1 day ago</div>
       </div>

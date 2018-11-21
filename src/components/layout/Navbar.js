@@ -10,7 +10,7 @@ const Navbar = (props) => {
   const links = auth.uid ? <Signedinlinks profile={profile}/> : <Signedoutlinks/>;
     return (
       <div className="ui container">
-      <div className="ui secondary  menu navbar-item">
+      <div className="ui secondary menu navbar-item">
                 <div className="item">
                         <Link to='/' className="item logo-bar">
                                Pbooth
