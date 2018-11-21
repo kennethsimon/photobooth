@@ -108,6 +108,10 @@
     padding-left: 10px;
 }
 
+.post-images{
+    min-height: 100px;
+    position: relative;
+}
 
 
 

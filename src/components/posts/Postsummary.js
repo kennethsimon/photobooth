@@ -6,7 +6,7 @@ import moment from 'moment'
 const Postsummary = ({post}) => {
     return (
       
-        <div className="photo-card animated fadeIn delay-2s">
+        <div className="photo-card animated fadeIn delay-1s">
     <div className="ui fluid card">
       {/**username photo and details and posted time section */}
   <div className="content">
