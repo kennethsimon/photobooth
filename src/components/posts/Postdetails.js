@@ -20,14 +20,7 @@ const Postdetails = (props) => {
      <button className="ui icon button">
      <i className="arrow down icon"></i>
      </button>
-     <div className="ui labeled button" tabindex="0">
-  <div className="ui button">
-    <i className="heart icon"></i> Like
-  </div>
-  <Link to='/' className="ui basic label">
-    2,048
-  </Link>
-</div>
+    
      </div>
         </div>
      
@@ -41,7 +34,7 @@ const Postdetails = (props) => {
       </div>
       <div className="content">
         <div className="header">
-        <Link to='/' class="ui tag label">{posted.tag}</Link>
+        <Link to='/' className="ui tag label">{posted.tag}</Link>
         </div>
       <div className="description">
        {posted.description}
@@ -54,7 +47,7 @@ const Postdetails = (props) => {
     )
   }else{
     return (
-      <div class="ui active centered inline loader"></div>
+      <div className="ui active centered inline loader"></div>
       )
   }
     
