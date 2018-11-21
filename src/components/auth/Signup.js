@@ -48,7 +48,7 @@ class Signup extends Component {
        <div>
      <div className="ui attached message">
   <div className="header">
-    Welcome to our site!
+    Welcome to Photobooth
   </div>
   <p>Fill out the form below to sign-up for a new account</p>
 </div>

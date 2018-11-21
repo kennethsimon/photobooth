@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import {signIn} from '../../store/actions/authActions'
 import {Redirect} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 
 class Signin extends Component {
@@ -25,21 +26,32 @@ class Signin extends Component {
     if(auth.uid) return <Redirect to='/'/>
     return (
      <div className="signinform">
-          <div className="signin-content">
-          <form className="ui form" onSubmit={this.handleSubmit}>
-          <div className="field">
-          <label>Username</label>
-          <input onChange={this.handleChange} type="text" id='email' placeholder="Username"/>
-          </div>
-          <div className="field">
-          <label>Password</label>
-          <input onChange={this.handleChange} type='password' id='password' placeholder="Password"/>
-          </div>
-          <button className="ui button" type="submit">Submit</button>
-          {authError ? <p>{authError}</p> : null}
-          </form>
-          </div>
-      </div>
+       <div>
+     <div className="ui attached message">
+  <div className="header">
+    Welcome to Photobooth
+  </div>
+  <p>Fill out the form below to sign-in for a new account</p>
+</div>
+<form onSubmit={this.handleSubmit} className="ui form attached fluid segment">
+  <div className="field">
+    <label>Email</label>
+    <input onChange={this.handleChange} type="email" id='email' name="email" placeholder="Email"/>
+  </div>
+  <div className="field">
+    <label>Password</label>
+    <input  onChange={this.handleChange} type="password" id='password' placeholder="Password"/>
+  </div>
+  
+  <button className="ui blue submit button">Submit</button>
+  {authError ? <p>{authError}</p> : null}
+</form>
+<div className="ui bottom attached warning message">
+  <i className="icon help"></i>
+  Dont have an account? <Link to='/signup'>Register here</Link> instead.
+</div>
+</div>
+</div>
     )
   }
 }
