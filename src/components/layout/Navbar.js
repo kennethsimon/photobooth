@@ -12,7 +12,7 @@ const Navbar = (props) => {
       <div className="ui container">
       <div className="ui secondary  menu navbar-item">
                 <div className="item">
-                        <Link to='/' className="item">
+                        <Link to='/' className="item logo-bar">
                                Pbooth
                               </Link>
                 </div>

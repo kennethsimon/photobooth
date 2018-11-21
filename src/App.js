@@ -17,11 +17,11 @@ class App extends Component {
        <Navbar/>
        <Switch>
          <Route exact path='/' component={Dashboard}/>
-         <Route path='/post/:id' component={Postdetails}/>
-         <Route exact path='/signin' component={Signin}/>
-         <Route exact path='/signup' component={Signup}/>
-         <Route exact path='/submitphoto' component={Submitphoto}/>
-         <Route exact path='/explore' component={Explore}/>
+         <Route exact path='/post/:id' component={Postdetails}/>
+         <Route path='/signin' component={Signin}/>
+         <Route path='/signup' component={Signup}/>
+         <Route path='/submitphoto' component={Submitphoto}/>
+         <Route path='/explore' component={Explore}/>
        </Switch>
       </div>
       </BrowserRouter>
